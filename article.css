@@ -418,6 +418,39 @@
     border-radius: var(--radius-md);
 }
 
+/* --- Amazon Button --- */
+.amazon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #ff9900, #ff8c00);
+    color: #fff !important;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 153, 0, 0.2);
+}
+
+.amazon-btn:hover {
+    background: linear-gradient(135deg, #ff8c00, #e67e00);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(255, 153, 0, 0.35);
+}
+
+.amazon-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+}
+
 /* --- Yahoo Shopping Button --- */
 .yahoo-shopping-btn {
     display: flex;
@@ -451,8 +484,9 @@
     background: #fff;
     color: #ff0033;
     font-weight: 900;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     border-radius: 6px;
+    font-style: normal;
 }
 
 /* --- Comparison Table --- */
@@ -516,6 +550,19 @@
 .comparison-table .stars {
     color: #facc15;
     letter-spacing: 1px;
+}
+
+.affiliate-btns-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+    .affiliate-btns-flex {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* --- Selection Guide --- */

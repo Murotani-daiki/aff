@@ -9,87 +9,83 @@
         content="通勤や立ち仕事でも疲れにくい、歩きやすくておしゃれなスニーカーを厳選。NIKE、New Balance、Onなど人気ブランドから、ビジネスカジュアルにも合うモデルを紹介します。">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="article.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <style>
-        /* Article specific overrides */
+        /* Article specific overrides for Fashion category */
+        .article-hero {
+            background: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, transparent 100%);
+        }
+
+        .article-hero::before {
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+        }
+
         .article-category-badge.fashion {
             background: rgba(245, 158, 11, 0.2);
             color: #fbbf24;
         }
 
-        .yahoo-shopping-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 12px;
-            background-color: #ff0033;
-            /* Yahoo Red */
-            color: white;
-            font-weight: 700;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 10px;
-            transition: opacity 0.2s;
+        .article-lead {
+            border-left-color: #f59e0b;
         }
 
-        .yahoo-shopping-btn:hover {
-            opacity: 0.9;
-            color: white;
-        }
-
-        .yahoo-icon {
-            font-weight: 900;
-            margin-right: 6px;
+        .article-h2 {
+            border-image: linear-gradient(to right, #f59e0b, #fbbf24) 1;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- ========== Header ========== -->
-    <header class="site-header">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="nav-logo">
-                <span class="nav-logo-icon">✦</span>
-                BestPick
+                <span class="nav-logo-icon">✦</span> BestPick
             </a>
-        </div>
-    </header>
-
-    <!-- ========== Article Layout ========== -->
-    <section class="article-layout">
-        <div class="container">
-
-            <!-- Breadcrumb -->
-            <div class="article-breadcrumb">
+            <div class="nav-links" id="navLinks">
                 <a href="index.html">ホーム</a>
-                <span>&rsaquo;</span>
+                <a href="index.html#gadgets">ガジェット</a>
+                <a href="index.html#beauty">美容</a>
                 <a href="index.html#fashion">ファッション</a>
-                <span>&rsaquo;</span>
+            </div>
+            <button class="nav-hamburger" id="navHamburger" aria-label="メニュー">☰</button>
+        </div>
+    </nav>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <div class="article-breadcrumb">
+                <a href="index.html">ホーム</a> <span>›</span>
+                <a href="index.html#fashion">ファッション</a> <span>›</span>
                 <span class="current">快適スニーカー10選</span>
             </div>
-
-            <div class="article-main">
-
-                <!-- Article Hero -->
-                <div class="article-header-content">
-                    <span class="article-category-badge fashion">👟 ファッション</span>
-                    <h1 class="article-title">
-                        歩きやすさ重視！<br>通勤にも使える<span class="gradient">おしゃれスニーカー10選</span>
-                    </h1>
-                    <div class="article-meta-row">
-                        <span class="article-date">2026.02.15</span>
-                        <span class="article-author">BestPick編集部</span>
-                    </div>
+            <span class="article-category-badge fashion">👟 ファッション</span>
+            <h1 class="article-title">
+                歩きやすさ重視！<br>
+                通勤にも使える<br>
+                <span class="gradient">おしゃれスニーカー</span>10選
+            </h1>
+            <div class="article-meta-row">
+                <span class="article-date">📅 2026.02.16</span>
+                <span class="article-author">BestPick編集部</span>
+                <div class="article-stars">
+                    ★★★★★<span>4.9</span>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Main Content -->
+    <section class="article-layout">
+        <div class="container">
+            <div class="article-main">
                 <div class="article-hero-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&h=600&fit=crop"
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&h=675&fit=crop"
                         alt="おしゃれなスニーカー" class="article-hero-img">
                 </div>
 
@@ -223,10 +219,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/52w-ck" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/46UcZLQ" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/52w-ck" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -330,10 +332,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/hu2X-e" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/3ZE2NmU" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/hu2X-e" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -436,10 +444,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/rMMmJy" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/4qC41d6" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/rMMmJy" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -542,10 +556,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/hpnpXH" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/4tEE5Ai" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/hpnpXH" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -648,10 +668,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/jQAJLq" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/46bu9V4" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/jQAJLq" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -756,10 +782,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/9hHcuN" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/466aKoC" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/9hHcuN" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -861,10 +893,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/68Xawj" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/4tAF1Ww" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/68Xawj" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -967,10 +1005,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/LeRA9k" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/4rLK8kW" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/LeRA9k" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -1073,10 +1117,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/_UccCR" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/3MGHE8F" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/_UccCR" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -1180,10 +1230,16 @@
                                 </table>
                                 <!-- End Rakuten Banner -->
                             </div>
-                            <a href="https://yahoo.jp/xPZdHt" target="_blank" rel="nofollow sponsored noopener"
-                                class="yahoo-shopping-btn">
-                                <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入する
-                            </a>
+                            <div class="affiliate-btns-flex">
+                                <a href="https://amzn.to/4rnxAAy" target="_blank" rel="nofollow sponsored noopener"
+                                    class="amazon-btn">
+                                    <span class="amazon-icon"><i class="fa-brands fa-amazon"></i></span> Amazonで購入
+                                </a>
+                                <a href="https://yahoo.jp/xPZdHt" target="_blank" rel="nofollow sponsored noopener"
+                                    class="yahoo-shopping-btn">
+                                    <span class="yahoo-icon">Y!</span> Yahoo!ショッピングで購入
+                                </a>
+                            </div>
                         </div>
                     </div>
 
