@@ -50,55 +50,53 @@
 
 <body>
 
-    <!-- Header -->
-    <header class="site-header">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="nav-logo">
-                <span class="nav-logo-icon">🌿</span>
-                BestPick
+                <span class="nav-logo-icon">✦</span> BestPick
             </a>
-            <button class="nav-toggle" id="navHamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="nav-links" id="navLinks">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">ホーム</a>
                 <a href="index.html#gadgets">ガジェット</a>
-                <a href="index.html#beauty" class="active">美容・コスメ</a>
-                <a href="index.html#health">健康・食品</a>
+                <a href="index.html#beauty">美容</a>
                 <a href="index.html#fashion">ファッション</a>
-            </nav>
+            </div>
+            <button class="nav-hamburger" id="navHamburger" aria-label="メニュー">☰</button>
         </div>
-    </header>
+    </nav>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <div class="article-breadcrumb">
+                <a href="index.html">ホーム</a> <span>›</span>
+                <a href="index.html#beauty">美容・コスメ</a> <span>›</span>
+                <span class="current">オーガニックスキンケア</span>
+            </div>
+            <span class="article-category-badge beauty">🌿 美容・コスメ</span>
+            <h1 class="article-title">
+                敏感肌でも安心！<br>
+                <span class="gradient">オーガニックスキンケア</span><br>
+                人気ランキング2026
+            </h1>
+            <div class="article-meta-row">
+                <span class="article-date">📅 2026.02.16</span>
+                <span class="article-author">BestPick編集部</span>
+                <div class="article-stars">
+                    ★★★★★<span>4.9</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Main Content -->
     <section class="article-layout">
         <div class="container">
-            <!-- Breadcrumb -->
-            <nav class="article-breadcrumb">
-                <a href="index.html">HOME</a>
-                <i class="fas fa-chevron-right"></i>
-                <a href="index.html#beauty">美容・コスメ</a>
-                <i class="fas fa-chevron-right"></i>
-                <span class="current">オーガニックスキンケアランキング</span>
-            </nav>
-
             <div class="article-main">
-                <!-- Hero -->
-                <div class="article-hero-content">
-                    <span class="article-category-badge beauty">美容・コスメ</span>
-                    <h1 class="article-title">
-                        敏感肌でも安心！<br>
-                        <span class="gradient">オーガニックスキンケア</span><br>
-                        人気ランキング2026
-                    </h1>
-                    <div class="article-meta-row">
-                        <time datetime="2026-02-16"><i class="far fa-clock"></i> 2026.02.16</time>
-                        <span class="article-author"><i class="far fa-user"></i> BestPick編集部</span>
-                        <div class="article-stars">
-                            ★★★★★<span>4.9</span>
-                        </div>
-                    </div>
+                <div class="article-hero-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=1200&h=675&fit=crop"
+                        alt="オーガニックスキンケア" class="article-hero-img">
                 </div>
 
                 <!-- Lead -->
@@ -196,7 +194,7 @@
                                                                     src="https://hbb.afl.rakuten.co.jp/hgb/510847fb.3dced290.510847fc.52cf7282/?me_id=1424672&item_id=10000984&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcosmekitchen%2Fcabinet%2F10406205a%2Fimgrc0095312338.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
                                                                     border="0" style="margin:2px" alt="" title=""></a>
                                                         </td>
-                                                        <td style="vertical-align:top;width:248px;display: block;">
+                                                        <td style="vertical-align:top;width:248px;">
                                                             <p
                                                                 style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
                                                                 <a href="https://hb.afl.rakuten.co.jp/ichiba/510847fb.3dced290.510847fc.52cf7282/_RTLink126306?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmekitchen%2F4570106726938%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
@@ -303,7 +301,7 @@
                                                                     src="https://hbb.afl.rakuten.co.jp/hgb/51084c21.aa615144.51084c22.ded31ce3/?me_id=1205374&item_id=10074035&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcosmelink%2Fcabinet%2F2024_cp3%2F4001638529419_cp.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
                                                                     border="0" style="margin:2px" alt="" title=""></a>
                                                         </td>
-                                                        <td style="vertical-align:top;width:248px;display: block;">
+                                                        <td style="vertical-align:top;width:248px;">
                                                             <p
                                                                 style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
                                                                 <a href="https://hb.afl.rakuten.co.jp/ichiba/51084c21.aa615144.51084c22.ded31ce3/_RTLink126306?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F4001638529419%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
@@ -409,7 +407,7 @@
                                                                     src="https://hbb.afl.rakuten.co.jp/hgb/510847fb.3dced290.510847fc.52cf7282/?me_id=1424672&item_id=10000463&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcosmekitchen%2Fcabinet%2F09316580a%2Fa_imgrc0078992748.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
                                                                     border="0" style="margin:2px" alt="" title=""></a>
                                                         </td>
-                                                        <td style="vertical-align:top;width:248px;display: block;">
+                                                        <td style="vertical-align:top;width:248px;">
                                                             <p
                                                                 style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
                                                                 <a href="https://hb.afl.rakuten.co.jp/ichiba/50d5f10d.1e41aff4.50d5f10e.5c928699/?pc=https%3A%2F%2Fproduct.rakuten.co.jp%2Fproduct%2F-%2F933d78508229d9b2dfc59ab0442f8c37%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjoxLCJhbXAiOmZhbHNlfQ%3D%3D"
@@ -517,7 +515,7 @@
                                                                     src="https://hbb.afl.rakuten.co.jp/hgb/51085257.b412b643.51085258.5a4a6f29/?me_id=1423065&item_id=10001496&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fl-renew%2Fcabinet%2F12112141%2Fimgrc0113834958.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
                                                                     border="0" style="margin:2px" alt="" title=""></a>
                                                         </td>
-                                                        <td style="vertical-align:top;width:248px;display: block;">
+                                                        <td style="vertical-align:top;width:248px;">
                                                             <p
                                                                 style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
                                                                 <a href="https://hb.afl.rakuten.co.jp/ichiba/50d5f10d.1e41aff4.50d5f10e.5c928699/_RTLink126306?pc=https%3A%2F%2Fproduct.rakuten.co.jp%2Fproduct%2F-%2Ff070d0d88add5b9954939234d172d94d%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjoxLCJhbXAiOmZhbHNlfQ%3D%3D"
@@ -622,7 +620,7 @@
                                                                     src="https://hbb.afl.rakuten.co.jp/hgb/51085a25.c16cba56.51085a26.112e6946/?me_id=1421737&item_id=10004473&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Famitysun%2Fcabinet%2Fbiiino%2Fitem%2Fmain-image-6%2F20250520212253_1.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
                                                                     border="0" style="margin:2px" alt="" title=""></a>
                                                         </td>
-                                                        <td style="vertical-align:top;width:248px;display: block;">
+                                                        <td style="vertical-align:top;width:248px;">
                                                             <p
                                                                 style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
                                                                 <a href="https://hb.afl.rakuten.co.jp/ichiba/51085a25.c16cba56.51085a26.112e6946/_RTLink126306?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Famitysun%2F80000955%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
@@ -729,7 +727,7 @@
                                                                     src="https://hbb.afl.rakuten.co.jp/hgb/51085e5b.28baf4f6.51085e5c.a19757b2/?me_id=1400356&item_id=10047382&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcoscora%2Fcabinet%2Fimages39%2F347225.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
                                                                     border="0" style="margin:2px" alt="" title=""></a>
                                                         </td>
-                                                        <td style="vertical-align:top;width:248px;display: block;">
+                                                        <td style="vertical-align:top;width:248px;">
                                                             <p
                                                                 style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
                                                                 <a href="https://hb.afl.rakuten.co.jp/ichiba/51085e5b.28baf4f6.51085e5c.a19757b2/_RTLink126306?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoscora%2F347225%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
@@ -836,7 +834,7 @@
                                                                     src="https://hbb.afl.rakuten.co.jp/hgb/510863bd.cd28795d.510863be.74ac985d/?me_id=1235895&item_id=10016489&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Farwss%2Fcabinet%2F12531481%2F4573583370649.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
                                                                     border="0" style="margin:2px" alt="" title=""></a>
                                                         </td>
-                                                        <td style="vertical-align:top;width:248px;display: block;">
+                                                        <td style="vertical-align:top;width:248px;">
                                                             <p
                                                                 style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
                                                                 <a href="https://hb.afl.rakuten.co.jp/ichiba/510863bd.cd28795d.510863be.74ac985d/_RTLink126306?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Farwss%2F110-4573583370649-260120%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
@@ -941,7 +939,7 @@
                                                                     src="https://hbb.afl.rakuten.co.jp/hgb/510866ff.81a50665.51086700.37a562bf/?me_id=1253708&item_id=10042007&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcosmecosme%2Fcabinet%2Fimage%2F05%2F49995_1.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
                                                                     border="0" style="margin:2px" alt="" title=""></a>
                                                         </td>
-                                                        <td style="vertical-align:top;width:248px;display: block;">
+                                                        <td style="vertical-align:top;width:248px;">
                                                             <p
                                                                 style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
                                                                 <a href="https://hb.afl.rakuten.co.jp/ichiba/510866ff.81a50665.51086700.37a562bf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmecosme%2F3284410045012%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjAsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
@@ -1017,9 +1015,9 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
+            </div> <!-- End of article-main -->
+        </div> <!-- End of container -->
+    </section> <!-- End of article-layout -->
 
     <!-- Footer -->
     <footer class="site-footer">

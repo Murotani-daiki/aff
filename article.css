@@ -116,6 +116,31 @@
     margin: 0 auto;
 }
 
+.article-hero-img-wrapper {
+    margin-top: -80px;
+    margin-bottom: 48px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-glass);
+    position: relative;
+    z-index: 10;
+}
+
+.article-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.article-hero-img-wrapper:hover .article-hero-img {
+    transform: scale(1.03);
+}
+
 /* --- Article Lead --- */
 .article-lead {
     font-size: 1.05rem;
