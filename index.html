@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestPick — あなたのベストな買い物を見つけるブログ</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ガジェット、美容、ファッション、食品、健康、インテリアなど幅広いジャンルの厳選おすすめ商品をレビュー。本当に良いものだけをピックアップしてお届けします。">
+    <meta name="keywords" content="おすすめ商品,レビュー,ガジェット,美容,ファッション,食品,健康,インテリア,アフィリエイト,買い物">
+    <meta name="author" content="BestPick">
+    <link rel="canonical" href="https://bestpick-blog.com/">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="BestPick — あなたのベストな買い物を見つけるブログ">
+    <meta property="og:description" content="ガジェット、美容、ファッション、食品、健康、インテリアなど幅広いジャンルの厳選おすすめ商品をレビュー。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== Navbar ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-icon">✦</span>
+                BestPick
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#featured">注目の商品</a>
+                <a href="#gadgets">ガジェット</a>
+                <a href="#beauty">美容</a>
+                <a href="#fashion">ファッション</a>
+                <a href="#food">グルメ</a>
+            </div>
+            <form class="nav-search" action="#" method="get">
+                <input type="text" placeholder="商品を検索..." name="q">
+                <button type="submit">🔍</button>
+            </form>
+            <button class="nav-hamburger" id="navHamburger" aria-label="メニュー">☰</button>
+        </div>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>
+                    <span class="gradient">ベストな商品</span>を<br>見つけよう。
+                </h1>
+                <p>ガジェットから美容、ファッション、グルメまで——<br>本当に良いものだけを厳選レビュー。あなたの買い物をもっと楽しく、もっと賢く。</p>
+                <a href="#featured" class="hero-cta">おすすめを見る →</a>
+            </div>
+            <div class="hero-image">
+                <img src="hero-banner.webp" alt="BestPickブログのメインビジュアル - 厳選商品レビュー">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Category Pills ========== -->
+    <section class="category-nav">
+        <div class="container">
+            <div class="category-pills">
+                <a href="#gadgets" class="category-pill active">
+                    <span class="pill-icon">📱</span> ガジェット
+                </a>
+                <a href="#beauty" class="category-pill">
+                    <span class="pill-icon">💄</span> 美容・コスメ
+                </a>
+                <a href="#fashion" class="category-pill">
+                    <span class="pill-icon">👟</span> ファッション
+                </a>
+                <a href="#food" class="category-pill">
+                    <span class="pill-icon">🍽️</span> グルメ・食品
+                </a>
+                <a href="#health" class="category-pill">
+                    <span class="pill-icon">💪</span> 健康・フィットネス
+                </a>
+                <a href="#interior" class="category-pill">
+                    <span class="pill-icon">🏠</span> インテリア
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Featured Products ========== -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <span class="section-badge">🔥 PICK UP</span>
+            <h2 class="section-title">今月の注目アイテム</h2>
+            <p class="section-subtitle">編集部が厳選した、今いちばん注目のアイテムをご紹介します。</p>
+
+            <div class="featured-grid">
+                <!-- Featured 1 -->
+                <article class="featured-card fade-in-up">
+                    <span class="badge-hot">🔥 HOT</span>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=400&fit=crop"
+                        alt="ワイヤレスノイズキャンセリングヘッドホン" class="featured-card-img">
+                    <div class="featured-card-body">
+                        <span class="featured-card-category gadget">ガジェット</span>
+                        <div class="stars">★★★★★</div>
+                        <h3 class="featured-card-title">
+                            <a href="noise-cancelling-headphones.html">【2026年最新】ノイキャンヘッドホンおすすめTOP5！在宅ワークにも最適なのはコレ</a>
+                        </h3>
+                        <p class="featured-card-desc">
+                            最新のノイズキャンセリングヘッドホンを徹底比較。音質・装着感・バッテリー持ちの観点から、プロが本当におすすめできるモデルだけを厳選しました。
+                        </p>
+                        <div class="featured-card-footer">
+                            <span class="featured-card-price">¥29,800〜</span>
+                            <a href="noise-cancelling-headphones.html" class="featured-card-btn">詳しく見る →</a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured 2 -->
+                <article class="featured-card fade-in-up">
+                    <span class="badge-new">✨ NEW</span>
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=400&fit=crop"
+                        alt="オーガニックスキンケアセット" class="featured-card-img">
+                    <div class="featured-card-body">
+                        <span class="featured-card-category beauty">美容・コスメ</span>
+                        <div class="stars">★★★★☆</div>
+                        <h3 class="featured-card-title">
+                            <a href="organic-skincare-ranking.html">敏感肌でも安心！オーガニックスキンケア人気ランキング2026</a>
+                        </h3>
+                        <p class="featured-card-desc">
+                            肌に優しい成分だけを使用したオーガニックスキンケアアイテムを徹底レビュー。実際に使って感じた効果と使い心地をリアルにお伝えします。
+                        </p>
+                        <div class="featured-card-footer">
+                            <span class="featured-card-price">¥3,980〜</span>
+                            <a href="organic-skincare-ranking.html" class="featured-card-btn">詳しく見る →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured 3 -->
+                <article class="featured-card fade-in-up">
+                    <span class="badge-hot">🔥 HOT</span>
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=400&fit=crop"
+                        alt="人気スニーカー" class="featured-card-img">
+                    <div class="featured-card-body">
+                        <span class="featured-card-category fashion">ファッション</span>
+                        <div class="stars">★★★★★</div>
+                        <h3 class="featured-card-title">
+                            <a href="#">歩きやすさ重視！通勤にも使えるおしゃれスニーカー10選</a>
+                        </h3>
+                        <p class="featured-card-desc">
+                            毎日履きたくなる快適さとデザイン性を両立したスニーカーを厳選。ビジネスカジュアルにも合わせやすいアイテムを中心にご紹介。
+                        </p>
+                        <div class="featured-card-footer">
+                            <span class="featured-card-price">¥12,800〜</span>
+                            <a href="#" class="featured-card-btn">詳しく見る →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured 4 -->
+                <article class="featured-card fade-in-up">
+                    <span class="badge-new">✨ NEW</span>
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop"
+                        alt="プロテインスムージー" class="featured-card-img">
+                    <div class="featured-card-body">
+                        <span class="featured-card-category health">健康</span>
+                        <div class="stars">★★★★☆</div>
+                        <h3 class="featured-card-title">
+                            <a href="protein-beginners-guide.html">プロテイン初心者ガイド！味・コスパ・栄養で選ぶおすすめ7選</a>
+                        </h3>
+                        <p class="featured-card-desc">
+                            筋トレ初心者でも飲みやすいプロテインを厳選。ホエイ・ソイ・カゼインの違いから、目的別のおすすめまで徹底解説します。
+                        </p>
+                        <div class="featured-card-footer">
+                            <span class="featured-card-price">¥3,000〜</span>
+                            <a href="protein-beginners-guide.html" class="featured-card-btn">詳しく見る →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Main Content + Sidebar ========== -->
+    <section class="content-layout">
+        <div class="container">
+            <div class="main-area">
+
+                <!-- ===== Gadgets ===== -->
+                <div class="product-section" id="gadgets">
+                    <div class="product-section-header">
+                        <h2 class="product-section-title"><span class="icon">📱</span> ガジェット</h2>
+                        <a href="#" class="product-section-more">もっと見る →</a>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400&h=300&fit=crop"
+                                    alt="ノートパソコン" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">PC・タブレット</span>
+                                <h3 class="product-card-title"><a href="#">【最新】クリエイター向けノートPC比較！M4 MacBook vs Surface
+                                        Pro</a></h3>
+                                <p class="product-card-excerpt">動画編集やイラスト制作に最適なノートPCを比較。性能・携帯性・価格のバランスで選ぶ。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥198,000〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1546868871-af0de0ae72be?w=400&h=300&fit=crop"
+                                    alt="スマートウォッチ" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">ウェアラブル</span>
+                                <h3 class="product-card-title"><a href="#">Apple Watch vs Galaxy Watch！スマートウォッチ徹底比較</a>
+                                </h3>
+                                <p class="product-card-excerpt">健康管理から通知確認まで、生活を便利にするスマートウォッチの最新モデルを比較レビュー。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥39,800〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop"
+                                    alt="ワイヤレスイヤホン" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">オーディオ</span>
+                                <h3 class="product-card-title"><a href="#">完全ワイヤレスイヤホン1万円以下のおすすめ7選</a></h3>
+                                <p class="product-card-excerpt">コスパ最強のワイヤレスイヤホンを厳選。音質・装着感・ノイキャン性能のバランスで選ぶ。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥5,980〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- ===== Beauty ===== -->
+                <div class="product-section" id="beauty">
+                    <div class="product-section-header">
+                        <h2 class="product-section-title"><span class="icon">💄</span> 美容・コスメ</h2>
+                        <a href="#" class="product-section-more">もっと見る →</a>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&h=300&fit=crop"
+                                    alt="オーガニックスキンケア" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">スキンケア</span>
+                                <h3 class="product-card-title"><a
+                                        href="organic-skincare-ranking.html">敏感肌でも安心！オーガニックスキンケア人気ランキング2026</a></h3>
+                                <p class="product-card-excerpt">
+                                    肌に優しい成分だけを使用したオーガニックスキンケアアイテムを徹底レビュー。実際に使って感じた効果と使い心地をリアルにお伝えします。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥3,980〜</span>
+                                    <a href="organic-skincare-ranking.html" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop"
+                                    alt="メイクアップパレット" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">メイク</span>
+                                <h3 class="product-card-title"><a href="#">デパコス級の仕上がり！プチプラコスメ人気ランキング</a></h3>
+                                <p class="product-card-excerpt">2000円以下でデパコスに負けない仕上がりのプチプラコスメを厳選。メイクのプロが実際に検証。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥1,200〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1570194065650-d99fb4abbd90?w=400&h=300&fit=crop"
+                                    alt="美容液" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">スキンケア</span>
+                                <h3 class="product-card-title"><a href="#">シミ・くすみ対策に！ビタミンC美容液おすすめ比較</a></h3>
+                                <p class="product-card-excerpt">美白効果に定評のあるビタミンC美容液を濃度・浸透力・コスパの観点から徹底比較しました。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥2,980〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=300&fit=crop"
+                                    alt="ヘアケア製品" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">ヘアケア</span>
+                                <h3 class="product-card-title"><a href="#">サラツヤ髪になれる！市販シャンプーおすすめ8選</a></h3>
+                                <p class="product-card-excerpt">ドラッグストアで買えるシャンプーの中から、成分・仕上がり・香りで選ぶおすすめを紹介。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥980〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- ===== Fashion ===== -->
+                <div class="product-section" id="fashion">
+                    <div class="product-section-header">
+                        <h2 class="product-section-title"><span class="icon">👟</span> ファッション</h2>
+                        <a href="#" class="product-section-more">もっと見る →</a>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop"
+                                    alt="メンズファッション" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">メンズ</span>
+                                <h3 class="product-card-title"><a href="#">30代メンズの春服コーデ！失敗しない定番アイテム5選</a></h3>
+                                <p class="product-card-excerpt">大人カジュアルを目指す30代男性に。ユニクロ・GU・ZARAで作る高見えコーデを提案。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥3,990〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&h=300&fit=crop"
+                                    alt="レディースバッグ" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">レディース</span>
+                                <h3 class="product-card-title"><a href="#">通勤バッグおすすめ！おしゃれ×機能性で選ぶ人気ブランド</a></h3>
+                                <p class="product-card-excerpt">PC収納OK、軽量、きれいめデザイン。働く女性のリアルなニーズに応えるバッグを厳選。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥8,900〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop"
+                                    alt="腕時計" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">アクセサリー</span>
+                                <h3 class="product-card-title"><a href="#">3万円以下で買える！ビジネス向け腕時計おすすめランキング</a></h3>
+                                <p class="product-card-excerpt">新社会人にもおすすめの、コスパ抜群なビジネス時計を厳選。SEIKO・CASIO・Knotなど。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥15,000〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- ===== Food ===== -->
+                <div class="product-section" id="food">
+                    <div class="product-section-header">
+                        <h2 class="product-section-title"><span class="icon">🍽️</span> グルメ・食品</h2>
+                        <a href="#" class="product-section-more">もっと見る →</a>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop"
+                                    alt="スペシャルティコーヒー" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">ドリンク</span>
+                                <h3 class="product-card-title"><a href="#">お取り寄せコーヒー豆のおすすめ！自宅で最高の一杯を</a></h3>
+                                <p class="product-card-excerpt">スペシャルティコーヒーからブレンドまで、通販で買える本格コーヒー豆を厳選レビュー。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥1,200〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop"
+                                    alt="宅配ミールキット" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">宅配</span>
+                                <h3 class="product-card-title"><a href="#">忙しい人の味方！ミールキット・宅食サービス比較2026</a></h3>
+                                <p class="product-card-excerpt">Oisix・ヨシケイ・noshなど人気の宅配サービスを味・価格・手軽さで徹底比較しました。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥498〜/食</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop"
+                                    alt="お取り寄せスイーツ" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">スイーツ</span>
+                                <h3 class="product-card-title"><a href="#">ギフトにも◎ 話題のお取り寄せスイーツTOP10</a></h3>
+                                <p class="product-card-excerpt">SNSで話題のお取り寄せスイーツを実食レビュー。手土産やプレゼントにもぴったりのセレクション。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥1,500〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- ===== Health ===== -->
+                <div class="product-section" id="health">
+                    <div class="product-section-header">
+                        <h2 class="product-section-title"><span class="icon">💪</span> 健康・フィットネス</h2>
+                        <a href="#" class="product-section-more">もっと見る →</a>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1579722820308-d74e571900a9?q=80&w=400&h=300&fit=crop"
+                                    alt="プロテインシェイク" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">健康・食品</span>
+                                <h3 class="product-card-title"><a
+                                        href="protein-beginners-guide.html">プロテイン初心者ガイド！味・コスパ・栄養で選ぶおすすめ7選</a></h3>
+                                <p class="product-card-excerpt">飲みやすさとコスパで厳選。ダイエットや筋トレに最適なプロテインを比較レビュー。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥3,000〜</span>
+                                    <a href="protein-beginners-guide.html" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+                                    alt="ヨガマット" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">フィットネス</span>
+                                <h3 class="product-card-title"><a href="#">自宅トレーニンググッズおすすめ！初心者が揃えるべき5アイテム</a></h3>
+                                <p class="product-card-excerpt">ヨガマット・ダンベル・トレーニングバンドなど、家トレに必須のアイテムを厳選紹介。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥1,980〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop"
+                                    alt="サプリメント" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">サプリ</span>
+                                <h3 class="product-card-title"><a href="#">マルチビタミン比較！本当に効果のあるサプリの選び方</a></h3>
+                                <p class="product-card-excerpt">成分量・吸収率・コスパで比較。栄養士監修のもと、信頼できるマルチビタミンを厳選しました。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥1,480〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop"
+                                    alt="マッサージガン" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">ボディケア</span>
+                                <h3 class="product-card-title"><a href="#">マッサージガンは本当に効く？人気モデル5機種を実際に比較</a></h3>
+                                <p class="product-card-excerpt">筋膜リリースに効果的なマッサージガンを振動数・重さ・使いやすさの点から比較レビュー。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥6,980〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- ===== Interior ===== -->
+                <div class="product-section" id="interior">
+                    <div class="product-section-header">
+                        <h2 class="product-section-title"><span class="icon">🏠</span> インテリア</h2>
+                        <a href="#" class="product-section-more">もっと見る →</a>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop"
+                                    alt="おしゃれなソファ" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">家具</span>
+                                <h3 class="product-card-title"><a href="#">一人暮らし向け！コンパクトソファおすすめランキング</a></h3>
+                                <p class="product-card-excerpt">6畳でも置けるコンパクトサイズのソファを厳選。座り心地とデザインの両立を重視しました。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥19,800〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=400&h=300&fit=crop"
+                                    alt="間接照明" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">照明</span>
+                                <h3 class="product-card-title"><a href="#">部屋の雰囲気が激変！おしゃれ間接照明おすすめ7選</a></h3>
+                                <p class="product-card-excerpt">スマートライトから北欧デザインまで。置くだけで部屋がワンランクアップする照明を紹介。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥3,480〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card fade-in-up">
+                            <div class="product-card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1616627547584-bf28cee262db?w=400&h=300&fit=crop"
+                                    alt="観葉植物" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">グリーン</span>
+                                <h3 class="product-card-title"><a href="#">初心者でも枯らさない！育てやすい観葉植物ベスト10</a></h3>
+                                <p class="product-card-excerpt">日当たりや水やりの頻度を気にしなくてOKな、ズボラさん向け観葉植物を厳選しました。</p>
+                                <div class="product-card-meta">
+                                    <span class="product-card-price">¥2,500〜</span>
+                                    <a href="#" class="product-card-link">詳細 →</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ===== Sidebar ===== -->
+            <aside class="sidebar-area">
+
+                <!-- Ranking Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title"><span class="icon">🏆</span> 人気記事ランキング</h3>
+                    <div class="ranking-list">
+                        <a href="#" class="ranking-item">
+                            <span class="ranking-number">1</span>
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100&h=100&fit=crop"
+                                alt="ノイキャンヘッドホン" class="ranking-item-img">
+                            <div class="ranking-item-info">
+                                <div class="ranking-item-title">ノイキャンヘッドホンおすすめTOP5</div>
+                                <div class="ranking-item-price">¥29,800〜</div>
+                            </div>
+                        </a>
+                        <a href="#" class="ranking-item">
+                            <span class="ranking-number">2</span>
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100&h=100&fit=crop"
+                                alt="おしゃれスニーカー" class="ranking-item-img">
+                            <div class="ranking-item-info">
+                                <div class="ranking-item-title">通勤にも使えるおしゃれスニーカー10選</div>
+                                <div class="ranking-item-price">¥12,800〜</div>
+                            </div>
+                        </a>
+                        <a href="#" class="ranking-item">
+                            <span class="ranking-number">3</span>
+                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=100&h=100&fit=crop"
+                                alt="オーガニックスキンケア" class="ranking-item-img">
+                            <div class="ranking-item-info">
+                                <div class="ranking-item-title">オーガニックスキンケアランキング</div>
+                                <div class="ranking-item-price">¥3,980〜</div>
+                            </div>
+                        </a>
+                        <a href="#" class="ranking-item">
+                            <span class="ranking-number">4</span>
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=100&h=100&fit=crop"
+                                alt="お取り寄せコーヒー豆" class="ranking-item-img">
+                            <div class="ranking-item-info">
+                                <div class="ranking-item-title">お取り寄せコーヒー豆おすすめ</div>
+                                <div class="ranking-item-price">¥1,200〜</div>
+                            </div>
+                        </a>
+                        <a href="#" class="ranking-item">
+                            <span class="ranking-number">5</span>
+                            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=100&h=100&fit=crop"
+                                alt="クリエイター向けノートPC" class="ranking-item-img">
+                            <div class="ranking-item-info">
+                                <div class="ranking-item-title">クリエイター向けノートPC比較</div>
+                                <div class="ranking-item-price">¥198,000〜</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Category Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title"><span class="icon">📂</span> カテゴリ一覧</h3>
+                    <div class="cat-list">
+                        <a href="#gadgets"><span class="cat-icon">📱</span> ガジェット <span class="cat-count">12</span></a>
+                        <a href="#beauty"><span class="cat-icon">💄</span> 美容・コスメ <span class="cat-count">9</span></a>
+                        <a href="#fashion"><span class="cat-icon">👟</span> ファッション <span class="cat-count">8</span></a>
+                        <a href="#food"><span class="cat-icon">🍽️</span> グルメ・食品 <span class="cat-count">7</span></a>
+                        <a href="#health"><span class="cat-icon">💪</span> 健康・フィットネス <span
+                                class="cat-count">6</span></a>
+                        <a href="#interior"><span class="cat-icon">🏠</span> インテリア <span class="cat-count">5</span></a>
+                    </div>
+                </div>
+
+                <!-- Profile Widget -->
+                <div class="sidebar-widget profile-widget">
+                    <h3 class="sidebar-widget-title"><span class="icon">✍️</span> 運営者について</h3>
+                    <div class="profile-avatar">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop"
+                            alt="BestPick編集部アイコン">
+                    </div>
+                    <div class="profile-name">BestPick編集部</div>
+                    <p class="profile-bio">本当に良いものだけを届けたい。実際に使って、試して、納得したアイテムだけを厳選レビューしています。</p>
+                    <div class="profile-socials">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="nav-logo-icon">✦</span>
+                        BestPick
+                    </a>
+                    <p>実際に使って良いと感じた商品だけを厳選レビュー。あなたのベストな買い物をお手伝いします。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>カテゴリ</h4>
+                    <a href="#gadgets">ガジェット</a>
+                    <a href="#beauty">美容・コスメ</a>
+                    <a href="#fashion">ファッション</a>
+                    <a href="#food">グルメ・食品</a>
+                </div>
+                <div class="footer-col">
+                    <h4>その他</h4>
+                    <a href="#health">健康・フィットネス</a>
+                    <a href="#interior">インテリア</a>
+                    <a href="#">ランキング</a>
+                    <a href="#">新着記事</a>
+                </div>
+                <div class="footer-col">
+                    <h4>サイト情報</h4>
+                    <a href="#">運営者情報</a>
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">お問い合わせ</a>
+                    <a href="#">サイトマップ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BestPick All Rights Reserved. | 当サイトはアフィリエイトプログラムに参加しています。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JS: Scroll Animations ========== -->
+    <script>
+        // Intersection Observer for fade-in animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -40px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+
+            // Mobile nav toggle
+            const hamburger = document.getElementById('navHamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.position = 'absolute';
+                    navLinks.style.top = '64px';
+                    navLinks.style.left = '0';
+                    navLinks.style.right = '0';
+                    navLinks.style.background = 'rgba(15, 15, 26, 0.98)';
+                    navLinks.style.padding = '20px';
+                    navLinks.style.gap = '16px';
+                    navLinks.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+                    navLinks.style.zIndex = '999';
+                });
+            }
+
+            // Active category pill
+            document.querySelectorAll('.category-pill').forEach(pill => {
+                pill.addEventListener('click', function () {
+                    document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
