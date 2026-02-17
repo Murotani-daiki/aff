@@ -830,13 +830,10 @@ img {
     height: 80px;
     border-radius: 50%;
     margin: 0 auto 14px;
-    border: 3px solid transparent;
-    background: var(--accent-gradient) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    position: relative;
+    padding: 3px; /* space for gradient border */
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    box-sizing: border-box;
+    display: inline-block;
 }
 
 .profile-avatar img {
