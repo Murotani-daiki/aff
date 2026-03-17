@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -271,11 +271,64 @@
     <lastmod>2026-03-14</lastmod>
     <priority>0.7</priority>
   </url>
+    <url>
+        <loc>https://bestpick-blog.com/category-food.html</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bestpick-blog.com/category-alcohol.html</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bestpick-blog.com/otoriyose-wine-recommendation.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://bestpick-blog.com/nihonshu-recommendation-2026.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://bestpick-blog.com/craft-beer-recommendation.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://bestpick-blog.com/beginner-whisky-recommendation.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
   <url>
     <loc>https://blog.html-master.com/washable-rug-top9.html</loc>
     <lastmod>2026-03-14</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://bestpick-blog.com/lemon-sour-recommendation.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bestpick-blog.com/shochu-recommendation-guide.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bestpick-blog.com/umeshu-fruit-liqueur-ranking.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
-
 
